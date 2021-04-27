@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+	
+	<style>
+		.bluediv {background-color:blue;}
+		.greendiv {background-color:green;}
+	</style>
+	
+	<script>
+		$(document).ready(function(){
+			$("#button1").click(function(){
+				$(".bluediv").hide(); 
+			})
+			
+			$("#button2").click(function(){
+				$(".bluediv").toggle();
+			})
+		})
+	</script>
+	
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<h1>WDV321 Advanced JS</h1>
+	<h2>Dynamic Structure of a page</h2>
+	
+	
+	<div class = "bluediv">
+		<h3>This is blue</h3>
+	</div>
+	
+	<div class = "greendiv">
+		<h3>This is green</h3>
+	</div>
+	
+	<p>
+		<button id = "button1">Button 1</button>
+	</p>
+	<p>
+		<button id = "button2">Button 2</button>
+	</p>
+	<p>
+		<button id = "button3">Button 3</button>
+	</p>
+	
+</body>
+</html>

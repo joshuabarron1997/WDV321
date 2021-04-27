@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+	
+	<script>
+		
+		let clientName = "Mary";
+		
+		$(document).ready(function(){
+			$("h3 span").html(clientName);
+			
+			$("#button").click(
+				function(){alert(".click runs");})
+		});
+		
+		
+	
+	
+	</script>
+
+<title>Untitled Document</title>
+</head>
+
+<body>
+<h3>Hello <span>Josh</span></h3>
+<h3>Hello <span>Josh</span></h3>
+<p>WDV321 Advanced Javascript</p>
+<p>Input Processing </p>
+<form name="form1" method="post" action="https://dmacc.blackboard.com/bbcswebdav/pid-4341572-dt-content-rid-75929824_1/courses/202002_WDV321_23041/inputText.html">
+  <p>Name: 
+    <label for="inputName"></label>
+  <input type="text" name="inputName" id="inputName">
+  </p>
+  <p>
+    <input type="button" name="button" id="button" value="Submit">
+    <input type="reset" name="button2" id="button2" value="Reset">
+  </p>
+</form>
+<p>You Entered: </p>
+<p>&nbsp;</p>
+
+
+</body></html>

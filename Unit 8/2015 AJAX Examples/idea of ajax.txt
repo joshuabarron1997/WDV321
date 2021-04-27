@@ -1,0 +1,5 @@
+a button is pressed
+
+a function is called that requests a file from the server
+
+the object is returned and modifies the content of page

@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="../../js/functions.js"></script>
+<meta charset="utf-8">
+<title>About</title>
+	<style>
+		body {background-color:#9F84DF}
+		#box {
+			width: 500px;
+			height: 250px;
+			margin: 100px auto 0px auto;
+			background-color: hsla(298,43%,64%,1.00);
+			border: solid black 2px;
+			border-radius: 25px;
+		}
+		#center {
+			text-align: center;
+		}
+		#content {
+			width: 400px;
+			height: auto;
+			margin: auto;
+		}
+		h3, h2 {
+			text-align: center; 
+		}
+	</style>
+	<script>
+		if(getCookie("secure") != "true"){
+			alert("AUTHENTICATION REQUIRED");	
+			window.location.href = "http://joshbarron.info/";   
+
+		}
+		$(document).ready(function(){
+			document.querySelector("#hits").innerHTML = getCookie("hits");
+			if(getCookie("previous")!= ""){
+				document.querySelector("#site").innerHTML = getCookie("previous");
+			}
+		})
+		function destroyCookies(){
+			deleteCookie("hits");
+			deleteCookie("previous");
+			deleteCookie("secure");
+		}
+
+	</script>
+</head>
+
+<body>
+	<div id = "box">
+		<div id = "content">
+			<h3>joshbarron.info about page</h3>
+			<p>Hits on joshbarron.info by you - <span id ="hits"></span></p>
+			<p>You last viewed this site - <span id ="site">You did not enter by link</span></p>
+			<div id = "center"><input type = "button" value = "Destroy All Cookies" onClick="destroyCookies()"></div>
+			<h2><a href = "../../index.html">Home</a></h2>
+		</div>
+	</div>
+	
+	
+</body>
+</html>
